@@ -31,6 +31,5 @@ urlpatterns = [
 ]
 
 if settings.DEBUG:
-    print("funciona!!! ehehehe")
-    urlpatterns += static(settings.MEDIA_ROOT, document_root=settings.MEDIA_URL)
-    print(urlpatterns)
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+   

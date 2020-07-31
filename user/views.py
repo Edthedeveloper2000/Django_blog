@@ -21,5 +21,6 @@ def register(request):
 
 @login_required
 def profile(request):
+   # user = User.objects.all().filter(username='EdGames').first()
     return render(request,'user/profile.html')
     
